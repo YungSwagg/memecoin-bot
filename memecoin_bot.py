@@ -28,7 +28,12 @@ import os
 import time
 import requests
 from datetime import datetime, timezone
-from keep_alive import keep_alive
+
+try:
+    from keep_alive import keep_alive  # opzionale: serve solo su Replit, non su GitHub Actions/Termux/PC
+except ImportError:
+    def keep_alive():
+        pass
 
 CONFIG_PATH = os.path.join(os.path.dirname(__file__), "config.json")
 STATE_PATH = os.path.join(os.path.dirname(__file__), "state.json")
