@@ -2,11 +2,11 @@ name: Memecoin Bot Monitor
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
-  workflow_dispatch: {}
+    - cron: "*/15 * * * *"   # ogni 15 minuti (GitHub può ritardare leggermente in orari di picco)
+  workflow_dispatch: {}       # permette anche l'avvio manuale dalla tab "Actions"
 
 permissions:
-  contents: write
+  contents: write            # necessario per fare commit dello state.json aggiornato
 
 jobs:
   run-bot:
@@ -26,6 +26,9 @@ jobs:
       - name: Run monitor cycle
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_WEBHOOK_WALLET: ${{ secrets.DISCORD_WEBHOOK_WALLET }}
+          DISCORD_WEBHOOK_SIGNALS: ${{ secrets.DISCORD_WEBHOOK_SIGNALS }}
+          DISCORD_WEBHOOK_TRACKED: ${{ secrets.DISCORD_WEBHOOK_TRACKED }}
         run: python memecoin_bot.py --once
 
       - name: Commit updated state
