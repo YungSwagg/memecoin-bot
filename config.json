@@ -1,11 +1,11 @@
 {
   "wallet_address": "DsEnXYjDYnPkxxhu7uTVHTBWDe8vAVJjr3faGjidGth2",
-  "discord_webhook_url": "https://discord.com/api/webhooks/1535426557072375818/Q1dyJ7sgGozBB2x8TRmpuNuGAinAnWAbFI2E7Ilo6T-t_UuTztKuHVPxhPo5DHL43y2u",
+  "discord_webhook_url": "INSERISCI_QUI_IL_TUO_WEBHOOK_DISCORD",
   "discord_webhooks": {
-    "_comment": "Canali separati per categoria. Se una categoria è vuota, usa discord_webhook_url come fallback. Su GitHub Actions puoi anche impostarli come secret: DISCORD_WEBHOOK_WALLET, DISCORD_WEBHOOK_SIGNALS, DISCORD_WEBHOOK_TRACKED (hanno precedenza su questi valori).",
-    "wallet": "https://discord.com/api/webhooks/1535606008032923682/Fcy2_X-DU8bfw9BR8QYx7VQ35kF9U3l8vqoe_9GerSSRWajIdAXFEpMuq4B4t7Isd9Ws",
-    "signals": "https://discord.com/api/webhooks/1535426557072375818/Q1dyJ7sgGozBB2x8TRmpuNuGAinAnWAbFI2E7Ilo6T-t_UuTztKuHVPxhPo5DHL43y2u",
-    "tracked_wallets": "https://discord.com/api/webhooks/1535605912746590268/6tqC8Blut07zP7vKzZPkh9kYBse9UGKBbWg3su6WCd3qGqZpfXH8i7xMjtwsYu-rabh9"
+    "_comment": "Vuoti qui di proposito: i valori reali arrivano dai secret di GitHub Actions (DISCORD_WEBHOOK_WALLET, DISCORD_WEBHOOK_SIGNALS, DISCORD_WEBHOOK_TRACKED), che hanno sempre precedenza su questi placeholder. Così gli URL non restano visibili nella repo pubblica.",
+    "wallet": "INSERISCI_QUI_WEBHOOK_CANALE_WALLET",
+    "signals": "INSERISCI_QUI_WEBHOOK_CANALE_SEGNALI",
+    "tracked_wallets": "INSERISCI_QUI_WEBHOOK_CANALE_WALLET_TRACCIATI"
   },
   "rpc_url": "https://api.mainnet-beta.solana.com",
   "poll_interval_seconds": 60,
