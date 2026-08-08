@@ -37,6 +37,11 @@
         "ts": 1786188896.2721665,
         "price": 5.489e-05,
         "volume_h1": 0.0
+      },
+      {
+        "ts": 1786190603.8161433,
+        "price": 5.62e-05,
+        "volume_h1": 97.68
       }
     ],
     "3cVapUxMFr7xjpBL3ih8uHTfcCj4xsAXuBDCGtN4bonk": [
@@ -62,6 +67,11 @@
       },
       {
         "ts": 1786188896.3805969,
+        "price": 3.37e-06,
+        "volume_h1": 0.0
+      },
+      {
+        "ts": 1786190604.0311415,
         "price": 3.37e-06,
         "volume_h1": 0.0
       }
@@ -1729,7 +1739,7 @@
         "decimals": 6
       },
       "APFKoKUY5pBVhfQs82PP9mcTahnCWbAESJgyuSrsSBcL": {
-        "amount": 83258.004007,
+        "amount": 84519.800388,
         "decimals": 6
       },
       "BWVLAfrGMbu3oUsza5ZWHcysDZPfB3hPyNfUCPv1p7Y7": {
