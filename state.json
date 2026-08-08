@@ -87,6 +87,11 @@
         "ts": 1786212280.73115,
         "price": 6.082e-05,
         "volume_h1": 498.28
+      },
+      {
+        "ts": 1786215585.182435,
+        "price": 5.906e-05,
+        "volume_h1": 395.85
       }
     ],
     "3cVapUxMFr7xjpBL3ih8uHTfcCj4xsAXuBDCGtN4bonk": [
@@ -162,6 +167,11 @@
       },
       {
         "ts": 1786212280.8503206,
+        "price": 3.37e-06,
+        "volume_h1": 0.0
+      },
+      {
+        "ts": 1786215585.367019,
         "price": 3.37e-06,
         "volume_h1": 0.0
       }
@@ -913,7 +923,7 @@
       "wallet_buy": 1786187061.1774173
     },
     "3cVapUxMFr7xjpBL3ih8uHTfcCj4xsAXuBDCGtN4bonk": {
-      "sell": 1786212281.2532048
+      "sell": 1786215585.7593513
     }
   },
   "reference_price": {
