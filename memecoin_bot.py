@@ -231,7 +231,10 @@ def discover_trending_tokens(limit=50):
 # Discord
 # ---------------------------------------------------------------------------
 
-def send_discord_alert(webhook_url, title, description, color=0x9945FF, fields=None):
+def send_discord_alert(webhook_url, title, description, color=0x9945FF, fields=None, ping_everyone=False):
+    if not webhook_url or "INSERISCI_QUI" in webhook_url:
+        print(f"[!] Webhook non configurato, alert non inviato: {title}")
+        return
     embed = {
         "title": title,
         "description": description,
@@ -240,12 +243,22 @@ def send_discord_alert(webhook_url, title, description, color=0x9945FF, fields=N
     }
     if fields:
         embed["fields"] = fields
+    payload = {"embeds": [embed]}
+    if ping_everyone:
+        payload["content"] = "@everyone"
     try:
-        resp = requests.post(webhook_url, json={"embeds": [embed]}, timeout=10)
+        resp = requests.post(webhook_url, json=payload, timeout=10)
         if resp.status_code >= 300:
             print(f"[!] Errore invio Discord: {resp.status_code} {resp.text}")
     except Exception as e:
         print(f"[!] Errore invio Discord: {e}")
+
+
+def get_webhook(config, category):
+    """Ritorna il webhook della categoria richiesta ('wallet', 'signals', 'tracked_wallets'),
+    con fallback al webhook generico se quella categoria non è configurata separatamente."""
+    webhooks = config.get("discord_webhooks", {})
+    return webhooks.get(category) or config.get("discord_webhook_url")
 
 
 def can_alert(state, mint, signal_type):
@@ -335,7 +348,7 @@ def evaluate_sell_signal(market, history, entry_price, settings):
 def check_wallet(config, state):
     wallet = config["wallet_address"]
     rpc_url = config["rpc_url"]
-    webhook = config["discord_webhook_url"]
+    webhook = get_webhook(config, "wallet")
     wa = config["wallet_alerts"]
 
     sol_balance = get_sol_balance(rpc_url, wallet)
@@ -362,7 +375,7 @@ def check_wallet(config, state):
                                 f"Mint: {mint}\n{old_amount} → {amount}", color=0x00BFFF)
     for mint in old_tokens:
         if mint not in tokens:
-            send_discord_alert(webhook, "🚪 Token azzerato/venduto", f"Mint: {mint}", color=0x808080)
+            send_discord_alert(webhook, "🚪 Token azzerato/venduto", f"Mint: {mint}", color=0x808080, ping_everyone=True)
     state["tokens"] = tokens
 
     if wa["alert_on_new_transactions"]:
@@ -392,7 +405,7 @@ def check_tracked_wallets(config, state):
     """Traccia wallet pubblici di terzi: alert quando comprano/vendono un token.
     Usa solo dati pubblici on-chain, nessuna autorizzazione richiesta né possibile."""
     rpc_url = config["rpc_url"]
-    webhook = config["discord_webhook_url"]
+    webhook = get_webhook(config, "tracked_wallets")
     tracked = config.get("tracked_wallets", {})
 
     for wallet, meta in tracked.items():
@@ -526,7 +539,7 @@ def sign_and_send_swap(swap_tx_b64, keypair, rpc_url):
 def execute_buy(mint, config, state, keypair, market):
     """Compra 'max_usd_per_trade' dollari del token, rispettando il tetto giornaliero."""
     trading = config["trading"]
-    webhook = config["discord_webhook_url"]
+    webhook = get_webhook(config, "signals")
     reset_daily_limit_if_needed(state)
     spent_today = state["daily_spent"]["usd"]
     usd_amount = trading["max_usd_per_trade"]
@@ -566,7 +579,7 @@ def execute_buy(mint, config, state, keypair, market):
 def execute_sell(mint, token_amount, decimals, config, state, keypair, market):
     """Vende l'intera posizione (o la quantità indicata) del token."""
     trading = config["trading"]
-    webhook = config["discord_webhook_url"]
+    webhook = get_webhook(config, "signals")
     raw_amount = int(token_amount * (10 ** decimals))
 
     try:
@@ -574,7 +587,7 @@ def execute_sell(mint, token_amount, decimals, config, state, keypair, market):
         swap_tx = get_jupiter_swap_transaction(quote, str(keypair.pubkey()), trading.get("priority_fee_lamports", 0))
         sig = sign_and_send_swap(swap_tx, keypair, config["rpc_url"])
     except Exception as e:
-        send_discord_alert(webhook, "❌ Vendita FALLITA", f"Token: {market['symbol']}\nErrore: {e}", color=0xFF0000)
+        send_discord_alert(webhook, "❌ Vendita FALLITA", f"Token: {market['symbol']}\nErrore: {e}", color=0xFF0000, ping_everyone=True)
         return None
 
     out_sol = int(quote["outAmount"]) / LAMPORTS_PER_SOL
@@ -586,6 +599,7 @@ def execute_sell(mint, token_amount, decimals, config, state, keypair, market):
         f"Venduto: {token_amount:g} token → ~{out_sol:.4f} SOL\nPrezzo: ${market['price_usd']:.8f}\n"
         f"Tx: https://solscan.io/tx/{sig}",
         color=0xFF9900,
+        ping_everyone=True,
     )
     return sig
 
@@ -595,7 +609,7 @@ def execute_sell(mint, token_amount, decimals, config, state, keypair, market):
 # ---------------------------------------------------------------------------
 
 def check_sell_signals(config, state, owned_tokens, keypair=None):
-    webhook = config["discord_webhook_url"]
+    webhook = get_webhook(config, "signals")
     settings = config["signal_settings"]
     positions = config.get("positions", {})
     trading_enabled = config.get("trading", {}).get("enabled", False) and keypair is not None
@@ -627,12 +641,13 @@ def check_sell_signals(config, state, owned_tokens, keypair=None):
                     "⚠️ Segnale euristico, non è consiglio finanziario. Valuta tu.",
                     color=0xFF4C4C,
                     fields=[{"name": "Chart", "value": market["url"], "inline": False}],
+                    ping_everyone=True,
                 )
             mark_alerted(state, mint, "sell")
 
 
 def check_buy_signals(config, state, owned_tokens, keypair=None):
-    webhook = config["discord_webhook_url"]
+    webhook = get_webhook(config, "signals")
     settings = config["signal_settings"]
     watchlist = config.get("watchlist", {})
     trading_enabled = config.get("trading", {}).get("enabled", False) and keypair is not None
@@ -696,15 +711,30 @@ def main():
 
     config = load_config()
 
-    # Il webhook Discord può arrivare da variabile d'ambiente (consigliato se il
-    # config.json finisce in una repository pubblica, es. GitHub Actions) e ha
-    # sempre la precedenza sul valore scritto nel file.
-    env_webhook = os.environ.get("DISCORD_WEBHOOK_URL")
-    if env_webhook:
-        config["discord_webhook_url"] = env_webhook
+    # I webhook Discord possono arrivare da variabili d'ambiente (consigliato se il
+    # config.json finisce in una repository pubblica, es. GitHub Actions) e hanno
+    # sempre la precedenza sui valori scritti nel file.
+    # DISCORD_WEBHOOK_URL = fallback generico (usato se una categoria non ha il suo secret)
+    # DISCORD_WEBHOOK_WALLET / DISCORD_WEBHOOK_SIGNALS / DISCORD_WEBHOOK_TRACKED = canali dedicati
+    env_default = os.environ.get("DISCORD_WEBHOOK_URL")
+    if env_default:
+        config["discord_webhook_url"] = env_default
 
-    if "INSERISCI_QUI" in config["wallet_address"] or "INSERISCI_QUI" in config["discord_webhook_url"]:
-        print("⚠️  Compila config.json (wallet, watchlist) e imposta DISCORD_WEBHOOK_URL prima di avviare.")
+    config.setdefault("discord_webhooks", {})
+    for env_var, category in [
+        ("DISCORD_WEBHOOK_WALLET", "wallet"),
+        ("DISCORD_WEBHOOK_SIGNALS", "signals"),
+        ("DISCORD_WEBHOOK_TRACKED", "tracked_wallets"),
+    ]:
+        value = os.environ.get(env_var)
+        if value:
+            config["discord_webhooks"][category] = value
+
+    if "INSERISCI_QUI" in config["wallet_address"]:
+        print("⚠️  Compila config.json (wallet_address) prima di avviare.")
+        raise SystemExit(1)
+    if not get_webhook(config, "wallet") or "INSERISCI_QUI" in get_webhook(config, "wallet"):
+        print("⚠️  Nessun webhook Discord configurato (né generico né per canale). Imposta almeno DISCORD_WEBHOOK_URL.")
         raise SystemExit(1)
 
     state = load_state()
