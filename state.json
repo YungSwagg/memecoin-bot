@@ -112,6 +112,11 @@
         "ts": 1786224882.6983428,
         "price": 5.5e-05,
         "volume_h1": 0.0
+      },
+      {
+        "ts": 1786226637.026646,
+        "price": 5.5e-05,
+        "volume_h1": 0.0
       }
     ],
     "3cVapUxMFr7xjpBL3ih8uHTfcCj4xsAXuBDCGtN4bonk": [
@@ -212,6 +217,11 @@
       },
       {
         "ts": 1786224883.032106,
+        "price": 3.37e-06,
+        "volume_h1": 0.0
+      },
+      {
+        "ts": 1786226637.222411,
         "price": 3.37e-06,
         "volume_h1": 0.0
       }
