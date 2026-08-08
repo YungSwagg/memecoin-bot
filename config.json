@@ -1,0 +1,57 @@
+{
+  "wallet_address": "DsEnXYjDYnPkxxhu7uTVHTBWDe8vAVJjr3faGjidGth2",
+  "discord_webhook_url": "INSERISCI_QUI_IL_TUO_WEBHOOK_DISCORD",
+  "rpc_url": "https://api.mainnet-beta.solana.com",
+  "poll_interval_seconds": 60,
+
+  "watchlist": {
+    "_comment": "Vuota per ora. Aggiungi qui i mint address dei memecoin che NON possiedi ma vuoi monitorare per segnali di ACQUISTO. Formato: 'MINT_ADDRESS': {'note': 'nome token'}"
+  },
+
+  "tracked_wallets": {
+    "GF6dcYdv3yNEi7uhEJSYaeiDreMvaepWf99pJtVLe4EF": {"label": "Wallet 1"},
+    "3EV31uA5e7rtYEWScX5DiCbhcQxJPFKA17TmcYGAtyj3": {"label": "Wallet 2"},
+    "gh7gW8FtC8ygPnM8GMPtaufTXenNvck8Fi4cR2Up82w": {"label": "Wallet 3"},
+    "86jHaive6HZbLAwgYqZyQbKshUW6gDKB5L4dAw4JPC5b": {"label": "Wallet 4"},
+    "5cVzXu6bkFBxrzb2YfgrLEmTkuiEN8ibN7TmUs8WPPwX": {"label": "Wallet 5"},
+    "_nota": "Gli altri due indirizzi che mi hai mandato (0xD5b7... e 0xd9Bc...) sono formato Ethereum, non Solana: non li ho inclusi perché il bot non li leggerebbe. Se trovi la versione Solana di quei wallet, aggiungila qui con lo stesso formato."
+  },
+
+  "positions": {
+    "_comment": "Vuoto per ora: manca il mint address del token 'cate' a 0.035. Trovalo su Solscan/DexScreener e aggiungilo così: 'MINT_ADDRESS': {'entry_price_usd': 0.035}"
+  },
+
+  "signal_settings": {
+    "take_profit_pct": 50,
+    "stop_loss_pct": 20,
+    "momentum_buy_pct_5m": 8,
+    "momentum_sell_drop_pct_5m": -10,
+    "volume_spike_multiplier": 3,
+    "ma_short_periods": 5,
+    "ma_long_periods": 15,
+    "min_liquidity_usd": 5000
+  },
+
+  "wallet_alerts": {
+    "min_sol_change_to_alert": 0.001,
+    "alert_on_new_tokens": true,
+    "alert_on_token_balance_change": true,
+    "alert_on_new_transactions": true
+  },
+
+  "auto_discover": {
+    "_comment": "Scan automatico dei token in tendenza su pump.fun (rischio più alto, token non curati da te). Filtro liquidità: livello medio, stesso di signal_settings.",
+    "enabled": true,
+    "scan_limit": 50
+  },
+
+  "trading": {
+    "_comment": "TRADING AUTOMATICO REALE. Disattivo di default per sicurezza.",
+    "enabled": false,
+    "private_key_env_var": "WALLET_PRIVATE_KEY",
+    "max_usd_per_trade": 10,
+    "max_usd_per_day": 30,
+    "slippage_bps": 300,
+    "priority_fee_lamports": 100000
+  }
+}
