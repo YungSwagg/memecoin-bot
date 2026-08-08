@@ -161,6 +161,29 @@ Gli alert generati da questa modalità hanno una nota extra: "🔎 Trovato dallo
 
 Nota tecnica: usa un endpoint non ufficiale di pump.fun che potrebbe cambiare o smettere di funzionare senza preavviso — se succede, il bot logga l'errore e continua a funzionare normalmente solo con la watchlist statica.
 
+## 🔀 Canali Discord separati (opzionale)
+
+Puoi ricevere gli alert su 3 canali Discord diversi invece che tutti nello stesso:
+- **wallet** → alert sul tuo wallet Phantom (saldo, token, transazioni)
+- **signals** → segnali buy/sell (watchlist + scan automatico + notifiche di trade eseguiti)
+- **tracked_wallets** → alert sui wallet di terzi che tracci
+
+**In locale (PC/Termux)**: compila `discord_webhooks` in `config.json` con i 3 URL webhook (uno per ogni canale Discord che crei). Se lasci una categoria vuota/placeholder, quella categoria usa `discord_webhook_url` come fallback.
+
+**Su GitHub Actions**: più pulito usare secret dedicati invece di scrivere gli URL nel config (anche se `discord_webhooks` di per sé può stare nel config, dato che il repo è pubblico è comunque meglio tenerli come secret):
+- `DISCORD_WEBHOOK_WALLET`
+- `DISCORD_WEBHOOK_SIGNALS`
+- `DISCORD_WEBHOOK_TRACKED`
+- `DISCORD_WEBHOOK_URL` (fallback generico, usato per categorie senza secret dedicato)
+
+Questi secret hanno sempre precedenza sui valori scritti in `config.json`. Aggiungili nella stessa pagina dove hai già messo `DISCORD_WEBHOOK_URL` (Settings → Secrets and variables → Actions → New repository secret).
+
+## 📢 Ping @everyone sulle vendite
+
+Le notifiche legate alla vendita (segnale di vendita, vendita eseguita, vendita fallita, token sparito dal wallet) includono automaticamente un ping `@everyone` per farle risaltare.
+
+⚠️ Perché funzioni, il webhook deve avere il permesso di menzionare `@everyone` nel canale Discord: di solito è già così di default, ma se non vedi il ping arrivare, controlla in Discord → Impostazioni canale → Permessi, che il ruolo del webhook (o `@everyone` stesso) abbia il permesso "Menziona @everyone, @here e Tutti i ruoli" abilitato.
+
 ## Note tecniche
 
 - Prezzi/volumi da **DexScreener** (pubblica, no API key, ma non garantita al 100% per token appena lanciati).
