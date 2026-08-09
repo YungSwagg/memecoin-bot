@@ -14,11 +14,6 @@
   "price_history": {
     "347k5f1WLRYe81roRcLBWDR6k3eCRunaqetQPW6pbonk": [
       {
-        "ts": 1786203248.9893503,
-        "price": 5.733e-05,
-        "volume_h1": 44.99
-      },
-      {
         "ts": 1786205066.5944963,
         "price": 5.711e-05,
         "volume_h1": 159.97
@@ -160,6 +155,11 @@
       },
       {
         "ts": 1786291901.429668,
+        "price": 5.462e-05,
+        "volume_h1": 0.0
+      },
+      {
+        "ts": 1786294624.2899542,
         "price": 5.462e-05,
         "volume_h1": 0.0
       }
