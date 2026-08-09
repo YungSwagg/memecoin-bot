@@ -14,11 +14,6 @@
   "price_history": {
     "347k5f1WLRYe81roRcLBWDR6k3eCRunaqetQPW6pbonk": [
       {
-        "ts": 1786217905.7580035,
-        "price": 5.542e-05,
-        "volume_h1": 487.18
-      },
-      {
         "ts": 1786219421.9181032,
         "price": 5.5e-05,
         "volume_h1": 560.98
@@ -160,6 +155,11 @@
       },
       {
         "ts": 1786307880.1721504,
+        "price": 5.449e-05,
+        "volume_h1": 0.0
+      },
+      {
+        "ts": 1786310069.0145507,
         "price": 5.449e-05,
         "volume_h1": 0.0
       }
@@ -2006,7 +2006,7 @@
         "decimals": 6
       },
       "2Nawfia3sPV6aiWFTih2Xy7p3z1bmDaBis91PvW3TThF": {
-        "amount": 225023708.077732,
+        "amount": 227136429.544704,
         "decimals": 6
       },
       "2QPTVtkxC1HWkyQjUqc8hZ3rYmkNS5L6nFopkuUj22EM": {
@@ -2022,7 +2022,7 @@
         "decimals": 6
       },
       "5dyY84u3TnGtqCvGujQu8fDg9naZnGxQd2KBDD53z7Ke": {
-        "amount": 66892147.157631,
+        "amount": 67556679.65012,
         "decimals": 6
       },
       "7JFciymTYDELn5avys8r1ut3dbKHYQsX2Hud5jDihC3e": {
@@ -2054,7 +2054,7 @@
         "decimals": 6
       },
       "DkWWsdkjjdAioJYb19iCAXR1zR5QGyvFACKKhva8zJda": {
-        "amount": 47275139.950407,
+        "amount": 47769764.757021,
         "decimals": 6
       },
       "E2yvt1KvMRc28r6q4gwMEnJ7Zqem6oZ9fW5rq5X4KvfZ": {
@@ -2062,7 +2062,7 @@
         "decimals": 6
       },
       "EgfMKSEnvgjH44N9qh2732Nro8dP5gAUddewcCZBq5zt": {
-        "amount": 115424722.762332,
+        "amount": 116713926.734539,
         "decimals": 6
       },
       "J9G7jgc6tiwPuSwApXgtenJCxP33onkRWiqK5wX4iWub": {
