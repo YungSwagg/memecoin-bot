@@ -157,6 +157,11 @@
         "ts": 1786259869.4164257,
         "price": 5.418e-05,
         "volume_h1": 0.02
+      },
+      {
+        "ts": 1786262962.7433324,
+        "price": 5.418e-05,
+        "volume_h1": 0.0
       }
     ],
     "3cVapUxMFr7xjpBL3ih8uHTfcCj4xsAXuBDCGtN4bonk": [
@@ -1056,7 +1061,7 @@
       "sell": 1786259870.1532943
     },
     "347k5f1WLRYe81roRcLBWDR6k3eCRunaqetQPW6pbonk": {
-      "sell": 1786259869.817332
+      "sell": 1786262963.9214292
     }
   },
   "reference_price": {
