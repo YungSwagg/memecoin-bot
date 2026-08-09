@@ -142,6 +142,11 @@
         "ts": 1786248288.4334097,
         "price": 5.481e-05,
         "volume_h1": 0.0
+      },
+      {
+        "ts": 1786252765.7221637,
+        "price": 5.476e-05,
+        "volume_h1": 23.44
       }
     ],
     "3cVapUxMFr7xjpBL3ih8uHTfcCj4xsAXuBDCGtN4bonk": [
@@ -272,6 +277,11 @@
       },
       {
         "ts": 1786248288.77457,
+        "price": 3.37e-06,
+        "volume_h1": 0.0
+      },
+      {
+        "ts": 1786252766.094636,
         "price": 3.37e-06,
         "volume_h1": 0.0
       }
@@ -1023,10 +1033,10 @@
       "wallet_buy": 1786187061.1774173
     },
     "3cVapUxMFr7xjpBL3ih8uHTfcCj4xsAXuBDCGtN4bonk": {
-      "sell": 1786248289.0938914
+      "sell": 1786252766.2548444
     },
     "347k5f1WLRYe81roRcLBWDR6k3eCRunaqetQPW6pbonk": {
-      "sell": 1786248288.7080727
+      "sell": 1786252765.986141
     }
   },
   "reference_price": {
@@ -1953,7 +1963,7 @@
         "decimals": 6
       },
       "Cv3uYoAfSfPVYnNXY4iSw1KzuDVdPFFXLAPxkqAAo7jE": {
-        "amount": 105742.586038,
+        "amount": 107187.466187,
         "decimals": 6
       },
       "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v": {
@@ -1971,7 +1981,7 @@
         "decimals": 6
       },
       "2Nawfia3sPV6aiWFTih2Xy7p3z1bmDaBis91PvW3TThF": {
-        "amount": 223435266.368911,
+        "amount": 225023708.077732,
         "decimals": 6
       },
       "2QPTVtkxC1HWkyQjUqc8hZ3rYmkNS5L6nFopkuUj22EM": {
@@ -1987,7 +1997,7 @@
         "decimals": 6
       },
       "5dyY84u3TnGtqCvGujQu8fDg9naZnGxQd2KBDD53z7Ke": {
-        "amount": 66298413.432744,
+        "amount": 66892147.157631,
         "decimals": 6
       },
       "7JFciymTYDELn5avys8r1ut3dbKHYQsX2Hud5jDihC3e": {
@@ -1995,7 +2005,7 @@
         "decimals": 6
       },
       "7Z61irmPKihbMYRBdWaGw6ZzUyeBMjvdFjNhEc4h4AsX": {
-        "amount": 184744776.309222,
+        "amount": 188022115.67528,
         "decimals": 6
       },
       "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs": {
@@ -2003,7 +2013,7 @@
         "decimals": 8
       },
       "8BaEBpBytseU74fJdknPE6CQRMPwcQ2WWF97yzsDh4dX": {
-        "amount": 71626246.968466,
+        "amount": 72610306.021017,
         "decimals": 6
       },
       "8C4RygkxmePm9ys1qCcAB46dUCXNQYTaqfxS5mBrpump": {
@@ -2011,23 +2021,23 @@
         "decimals": 6
       },
       "ANKDuvhNt2H5gm4VM5LJbQV3VQoHeWaEJgMcEudogDB7": {
-        "amount": 19844012.450794,
+        "amount": 20114272.742245,
         "decimals": 6
       },
       "AgEaRTBf5mTeV9N6Kg48eir1mRLWScUdSBmRwYFCq2kS": {
-        "amount": 162501666.977004,
+        "amount": 164182472.381482,
         "decimals": 6
       },
       "DkWWsdkjjdAioJYb19iCAXR1zR5QGyvFACKKhva8zJda": {
-        "amount": 46762109.033602,
+        "amount": 47275139.950407,
         "decimals": 6
       },
       "E2yvt1KvMRc28r6q4gwMEnJ7Zqem6oZ9fW5rq5X4KvfZ": {
-        "amount": 6050595.095442,
+        "amount": 6129112.82498,
         "decimals": 6
       },
       "EgfMKSEnvgjH44N9qh2732Nro8dP5gAUddewcCZBq5zt": {
-        "amount": 113684942.48225,
+        "amount": 115424722.762332,
         "decimals": 6
       },
       "J9G7jgc6tiwPuSwApXgtenJCxP33onkRWiqK5wX4iWub": {
