@@ -14,11 +14,6 @@
   "price_history": {
     "347k5f1WLRYe81roRcLBWDR6k3eCRunaqetQPW6pbonk": [
       {
-        "ts": 1786215585.182435,
-        "price": 5.906e-05,
-        "volume_h1": 395.85
-      },
-      {
         "ts": 1786217905.7580035,
         "price": 5.542e-05,
         "volume_h1": 487.18
@@ -160,6 +155,11 @@
       },
       {
         "ts": 1786304977.6721783,
+        "price": 5.449e-05,
+        "volume_h1": 0.0
+      },
+      {
+        "ts": 1786307880.1721504,
         "price": 5.449e-05,
         "volume_h1": 0.0
       }
@@ -1980,7 +1980,7 @@
         "decimals": 6
       },
       "APFKoKUY5pBVhfQs82PP9mcTahnCWbAESJgyuSrsSBcL": {
-        "amount": 86098.859311,
+        "amount": 87170.684242,
         "decimals": 6
       },
       "BWVLAfrGMbu3oUsza5ZWHcysDZPfB3hPyNfUCPv1p7Y7": {
@@ -1988,7 +1988,7 @@
         "decimals": 6
       },
       "Cv3uYoAfSfPVYnNXY4iSw1KzuDVdPFFXLAPxkqAAo7jE": {
-        "amount": 107187.466187,
+        "amount": 109073.789446,
         "decimals": 6
       },
       "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v": {
@@ -2030,7 +2030,7 @@
         "decimals": 6
       },
       "7Z61irmPKihbMYRBdWaGw6ZzUyeBMjvdFjNhEc4h4AsX": {
-        "amount": 188022115.67528,
+        "amount": 190934371.446942,
         "decimals": 6
       },
       "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs": {
@@ -2038,7 +2038,7 @@
         "decimals": 8
       },
       "8BaEBpBytseU74fJdknPE6CQRMPwcQ2WWF97yzsDh4dX": {
-        "amount": 72610306.021017,
+        "amount": 73891218.657163,
         "decimals": 6
       },
       "8C4RygkxmePm9ys1qCcAB46dUCXNQYTaqfxS5mBrpump": {
@@ -2046,11 +2046,11 @@
         "decimals": 6
       },
       "ANKDuvhNt2H5gm4VM5LJbQV3VQoHeWaEJgMcEudogDB7": {
-        "amount": 20114272.742245,
+        "amount": 20406248.077674,
         "decimals": 6
       },
       "AgEaRTBf5mTeV9N6Kg48eir1mRLWScUdSBmRwYFCq2kS": {
-        "amount": 164182472.381482,
+        "amount": 166871427.633567,
         "decimals": 6
       },
       "DkWWsdkjjdAioJYb19iCAXR1zR5QGyvFACKKhva8zJda": {
@@ -2058,7 +2058,7 @@
         "decimals": 6
       },
       "E2yvt1KvMRc28r6q4gwMEnJ7Zqem6oZ9fW5rq5X4KvfZ": {
-        "amount": 6129112.82498,
+        "amount": 6198049.623794,
         "decimals": 6
       },
       "EgfMKSEnvgjH44N9qh2732Nro8dP5gAUddewcCZBq5zt": {
