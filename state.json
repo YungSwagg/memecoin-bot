@@ -14,11 +14,6 @@
   "price_history": {
     "347k5f1WLRYe81roRcLBWDR6k3eCRunaqetQPW6pbonk": [
       {
-        "ts": 1786259869.4164257,
-        "price": 5.418e-05,
-        "volume_h1": 0.02
-      },
-      {
         "ts": 1786262962.7433324,
         "price": 5.418e-05,
         "volume_h1": 0.0
@@ -162,6 +157,11 @@
         "ts": 1786361461.3000486,
         "price": 5.204e-05,
         "volume_h1": 0.0
+      },
+      {
+        "ts": 1786365212.417666,
+        "price": 4.87e-05,
+        "volume_h1": 472.33
       }
     ],
     "3cVapUxMFr7xjpBL3ih8uHTfcCj4xsAXuBDCGtN4bonk": [
@@ -1061,7 +1061,7 @@
       "sell": 1786259870.1532943
     },
     "347k5f1WLRYe81roRcLBWDR6k3eCRunaqetQPW6pbonk": {
-      "sell": 1786361461.515703
+      "sell": 1786365212.7925432
     },
     "86jHaive6HZbLAwgYqZyQbKshUW6gDKB5L4dAw4JPC5b:Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB": {
       "wallet_buy": 1786334873.4088323
@@ -1983,7 +1983,7 @@
         "decimals": 6
       },
       "APFKoKUY5pBVhfQs82PP9mcTahnCWbAESJgyuSrsSBcL": {
-        "amount": 87170.684242,
+        "amount": 88738.785872,
         "decimals": 6
       },
       "BWVLAfrGMbu3oUsza5ZWHcysDZPfB3hPyNfUCPv1p7Y7": {
@@ -1991,7 +1991,7 @@
         "decimals": 6
       },
       "Cv3uYoAfSfPVYnNXY4iSw1KzuDVdPFFXLAPxkqAAo7jE": {
-        "amount": 109073.789446,
+        "amount": 110357.776482,
         "decimals": 6
       },
       "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v": {
@@ -2065,7 +2065,7 @@
         "decimals": 6
       },
       "E2yvt1KvMRc28r6q4gwMEnJ7Zqem6oZ9fW5rq5X4KvfZ": {
-        "amount": 6198049.623794,
+        "amount": 6288010.06736,
         "decimals": 6
       },
       "EgfMKSEnvgjH44N9qh2732Nro8dP5gAUddewcCZBq5zt": {
