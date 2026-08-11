@@ -14,11 +14,6 @@
   "price_history": {
     "347k5f1WLRYe81roRcLBWDR6k3eCRunaqetQPW6pbonk": [
       {
-        "ts": 1786299284.2983994,
-        "price": 5.417e-05,
-        "volume_h1": 85.28
-      },
-      {
         "ts": 1786302406.1471753,
         "price": 5.449e-05,
         "volume_h1": 52.91
@@ -160,6 +155,11 @@
       },
       {
         "ts": 1786416833.4578736,
+        "price": 4.808e-05,
+        "volume_h1": 0.0
+      },
+      {
+        "ts": 1786422180.3124688,
         "price": 4.808e-05,
         "volume_h1": 0.0
       }
@@ -1061,7 +1061,7 @@
       "sell": 1786259870.1532943
     },
     "347k5f1WLRYe81roRcLBWDR6k3eCRunaqetQPW6pbonk": {
-      "sell": 1786416833.750454
+      "sell": 1786422180.6466987
     },
     "86jHaive6HZbLAwgYqZyQbKshUW6gDKB5L4dAw4JPC5b:Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB": {
       "wallet_buy": 1786334873.4088323
@@ -1082,7 +1082,7 @@
         "decimals": 6
       },
       "4R7rfMZCkFFSnYwUwGWyWNAUtZKFp5bnxVpV6NewCFSg": {
-        "amount": 1267278.438726,
+        "amount": 1298554.138161,
         "decimals": 6
       },
       "4ywkcMvMW5ejCQkv72zk67EdbgykwoRURoD9bZJLTug3": {
@@ -1090,7 +1090,7 @@
         "decimals": 6
       },
       "6bdiVMyxXA3sKyZ2cz9NFgZnFen7GpTThmw4VTStsg1H": {
-        "amount": 741110.089868,
+        "amount": 758564.784632,
         "decimals": 6
       },
       "BkGbo53JLn9jGa2Ff8gCVttbDYEBsGc5DtTyV1e8LAHf": {
@@ -1098,7 +1098,7 @@
         "decimals": 6
       },
       "CMKYukAoFauaiBMAjfPZarPPQJwtVp43f3GNbPUybEat": {
-        "amount": 1131687.996274,
+        "amount": 1164278.972991,
         "decimals": 6
       },
       "CdaVEe5uEr6MRoTLJwqaLN6UVT2XCGV8HEUxK2v2eUPb": {
@@ -1118,7 +1118,7 @@
         "decimals": 6
       },
       "Hauoyo73MjSj1QhbY9kznDFmdojXsrN3QG2U1nd2c372": {
-        "amount": 923373.716833,
+        "amount": 963510.267155,
         "decimals": 6
       }
     },
@@ -1983,7 +1983,7 @@
         "decimals": 6
       },
       "APFKoKUY5pBVhfQs82PP9mcTahnCWbAESJgyuSrsSBcL": {
-        "amount": 88738.785872,
+        "amount": 90481.20121,
         "decimals": 6
       },
       "BWVLAfrGMbu3oUsza5ZWHcysDZPfB3hPyNfUCPv1p7Y7": {
