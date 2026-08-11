@@ -14,11 +14,6 @@
   "price_history": {
     "347k5f1WLRYe81roRcLBWDR6k3eCRunaqetQPW6pbonk": [
       {
-        "ts": 1786307880.1721504,
-        "price": 5.449e-05,
-        "volume_h1": 0.0
-      },
-      {
         "ts": 1786310069.0145507,
         "price": 5.449e-05,
         "volume_h1": 0.0
@@ -160,6 +155,11 @@
       },
       {
         "ts": 1786430275.6984398,
+        "price": 4.808e-05,
+        "volume_h1": 0.0
+      },
+      {
+        "ts": 1786435040.9095657,
         "price": 4.808e-05,
         "volume_h1": 0.0
       }
@@ -1061,7 +1061,7 @@
       "sell": 1786259870.1532943
     },
     "347k5f1WLRYe81roRcLBWDR6k3eCRunaqetQPW6pbonk": {
-      "sell": 1786430276.1139002
+      "sell": 1786435041.2477345
     },
     "86jHaive6HZbLAwgYqZyQbKshUW6gDKB5L4dAw4JPC5b:Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB": {
       "wallet_buy": 1786334873.4088323
