@@ -1,5 +1,5 @@
 {
-  "sol_balance": 0.137628187,
+  "sol_balance": 0.073406408,
   "tokens": {
     "347k5f1WLRYe81roRcLBWDR6k3eCRunaqetQPW6pbonk": {
       "amount": 82.022249,
@@ -10,14 +10,9 @@
       "decimals": 6
     }
   },
-  "last_signature": "JfAmgdq1iYY75gSdMk2kQqVZW5pFPv8hnxbhntrXBs4RJwk2Enw1FuJqWDtgZngBPpbtAvWuvyoyjNgkJ8Hf24b",
+  "last_signature": "4f3pKp2HJEceXHeVythLk7Zcqdy5y1EBE7FwDm7AFuHAbwLBKZZNWB5yP9JpsHNN8cU9qRXopsSP2MPj7Q7o9LDB",
   "price_history": {
     "347k5f1WLRYe81roRcLBWDR6k3eCRunaqetQPW6pbonk": [
-      {
-        "ts": 1786340693.5339994,
-        "price": 5.382e-05,
-        "volume_h1": 25.69
-      },
       {
         "ts": 1786345162.1349504,
         "price": 5.205e-05,
@@ -162,6 +157,11 @@
         "ts": 1786462903.3102627,
         "price": 4.793e-05,
         "volume_h1": 0.0
+      },
+      {
+        "ts": 1786466370.2750072,
+        "price": 4.741e-05,
+        "volume_h1": 1.76
       }
     ],
     "3cVapUxMFr7xjpBL3ih8uHTfcCj4xsAXuBDCGtN4bonk": [
@@ -1061,7 +1061,7 @@
       "sell": 1786259870.1532943
     },
     "347k5f1WLRYe81roRcLBWDR6k3eCRunaqetQPW6pbonk": {
-      "sell": 1786462903.7184436
+      "sell": 1786466370.6041093
     },
     "86jHaive6HZbLAwgYqZyQbKshUW6gDKB5L4dAw4JPC5b:Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB": {
       "wallet_buy": 1786334873.4088323
