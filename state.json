@@ -14,11 +14,6 @@
   "price_history": {
     "347k5f1WLRYe81roRcLBWDR6k3eCRunaqetQPW6pbonk": [
       {
-        "ts": 1786375098.4412706,
-        "price": 4.775e-05,
-        "volume_h1": 105.2
-      },
-      {
         "ts": 1786379046.1697667,
         "price": 4.746e-05,
         "volume_h1": 0.66
@@ -162,6 +157,11 @@
         "ts": 1786491990.2632964,
         "price": 4.919e-05,
         "volume_h1": 546.24
+      },
+      {
+        "ts": 1786501145.8034892,
+        "price": 5.026e-05,
+        "volume_h1": 0.87
       }
     ],
     "3cVapUxMFr7xjpBL3ih8uHTfcCj4xsAXuBDCGtN4bonk": [
@@ -1064,7 +1064,8 @@
       "sell": 1786491990.6650884
     },
     "86jHaive6HZbLAwgYqZyQbKshUW6gDKB5L4dAw4JPC5b:Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB": {
-      "wallet_buy": 1786334873.4088323
+      "wallet_buy": 1786334873.4088323,
+      "wallet_sell": 1786501148.3652122
     }
   },
   "reference_price": {
@@ -1999,7 +2000,7 @@
         "decimals": 6
       },
       "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB": {
-        "amount": 30000.0032,
+        "amount": 24.374037,
         "decimals": 6
       }
     },
