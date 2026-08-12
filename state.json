@@ -1,5 +1,5 @@
 {
-  "sol_balance": 0.003893711,
+  "sol_balance": 0.465660474,
   "tokens": {
     "347k5f1WLRYe81roRcLBWDR6k3eCRunaqetQPW6pbonk": {
       "amount": 82.022249,
@@ -10,14 +10,9 @@
       "decimals": 6
     }
   },
-  "last_signature": "38tpxJNmwjCe3DmvBKm4MeqnftVCr9zYr2rcFBcjPuu5uRXiFydhA4W17RvaDNFPGDzRjaEp5KFALwjAz2UFrwB2",
+  "last_signature": "4MqiRYVwafYEAfVAJhkF3f5Vy6v7G21cU7etVM668GSP4DuqbdrDfXsW2Ky2jT97JunHyzboyHX7j9yr4oV9X7Lq",
   "price_history": {
     "347k5f1WLRYe81roRcLBWDR6k3eCRunaqetQPW6pbonk": [
-      {
-        "ts": 1786408618.4551098,
-        "price": 4.821e-05,
-        "volume_h1": 0.0
-      },
       {
         "ts": 1786416833.4578736,
         "price": 4.808e-05,
@@ -162,6 +157,11 @@
         "ts": 1786546877.2080336,
         "price": 5.017e-05,
         "volume_h1": 53.51
+      },
+      {
+        "ts": 1786551035.908009,
+        "price": 5.017e-05,
+        "volume_h1": 0.0
       }
     ],
     "3cVapUxMFr7xjpBL3ih8uHTfcCj4xsAXuBDCGtN4bonk": [
