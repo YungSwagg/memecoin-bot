@@ -1063,6 +1063,9 @@
     },
     "GF6dcYdv3yNEi7uhEJSYaeiDreMvaepWf99pJtVLe4EF:8Qxhs2TNmyQBwS6Py5gxFiJmr2zfrtcr72ENBuF98mVW": {
       "wallet_buy": 1787344473.453252
+    },
+    "86jHaive6HZbLAwgYqZyQbKshUW6gDKB5L4dAw4JPC5b:5dvXTZ5qwgafnHtwu3Ls3QrWx1U4LQsFeCuJgkk4QEC6": {
+      "wallet_buy": 1788998261.9482696
     }
   },
   "reference_price": {
@@ -1966,6 +1969,10 @@
       },
       "4p37V4YA54Jou7k3TWnwxeDXqtB9BQRik6NL3noJpump": {
         "amount": 868079.299993,
+        "decimals": 6
+      },
+      "5dvXTZ5qwgafnHtwu3Ls3QrWx1U4LQsFeCuJgkk4QEC6": {
+        "amount": 5256203.596642,
         "decimals": 6
       },
       "6hpfrxQb2kn9iprcJcZ6uXruGAwDe12W9zT4y4WSpump": {
