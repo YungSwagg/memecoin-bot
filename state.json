@@ -1,7 +1,7 @@
 {
-  "sol_balance": 0.888707656,
+  "sol_balance": 1.027010108,
   "tokens": {},
-  "last_signature": "3ymxUCxGNACShEW32XDF5Ak58GZ6gaTdC62RjUqsev1Au9KtecqgjXPYeSFeYUe5wE1Dm3xSnhih5VY2hfSKhC5U",
+  "last_signature": "2TXMU8FiWGwaAQZ9oUtXEwX61LgsqLERS6ybgzVymSPswhXkrHDcd8ecuPD8TjR3ZziJXnmqiHj6fnjQRSJMbS1U",
   "price_history": {
     "347k5f1WLRYe81roRcLBWDR6k3eCRunaqetQPW6pbonk": [
       {
@@ -1091,7 +1091,7 @@
         "decimals": 6
       },
       "4R7rfMZCkFFSnYwUwGWyWNAUtZKFp5bnxVpV6NewCFSg": {
-        "amount": 4854435.707371,
+        "amount": 4887493.354959,
         "decimals": 6
       },
       "4ywkcMvMW5ejCQkv72zk67EdbgykwoRURoD9bZJLTug3": {
@@ -1099,7 +1099,7 @@
         "decimals": 6
       },
       "6bdiVMyxXA3sKyZ2cz9NFgZnFen7GpTThmw4VTStsg1H": {
-        "amount": 2775080.593243,
+        "amount": 2805187.116783,
         "decimals": 6
       },
       "8Qxhs2TNmyQBwS6Py5gxFiJmr2zfrtcr72ENBuF98mVW": {
@@ -1111,7 +1111,7 @@
         "decimals": 6
       },
       "CMKYukAoFauaiBMAjfPZarPPQJwtVp43f3GNbPUybEat": {
-        "amount": 4399511.538053,
+        "amount": 4435392.355801,
         "decimals": 6
       },
       "CdaVEe5uEr6MRoTLJwqaLN6UVT2XCGV8HEUxK2v2eUPb": {
@@ -1135,7 +1135,7 @@
         "decimals": 6
       },
       "Hauoyo73MjSj1QhbY9kznDFmdojXsrN3QG2U1nd2c372": {
-        "amount": 3543645.175275,
+        "amount": 3570885.97646,
         "decimals": 6
       }
     },
